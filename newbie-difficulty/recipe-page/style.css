@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit';
+    color: hsl(30, 10%, 34%);
+}
+header, article{
+    width: 30vw;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.5rem;
+}
+header{
+    border-radius: 1.25rem 1.25rem 0 0;
+    margin-top: 8rem;
+    padding-bottom: 0;
+}
+article{
+    border-radius: 0 0 1.25px 1.25rem;
+    margin: 0;
+    padding-top: 1.25rem;
+}
+header img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+}
+h1, h2{
+    font-family: 'Young Serif';
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+}
+h1{
+    color: hsl(24, 5%, 18%);
+}
+.prep{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+}
+.prep h3{
+    margin: 0;
+}
+.prep ul{
+    margin-bottom: 0;
+}
+.prep li{
+    padding: .3rem;
+}
+.prep li::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: .8rem;
+}
+h3{
+    color: hsl(332, 51%, 32%);
+}
+.ingredients li{
+    padding: .3rem;
+}
+.ingredients li::marker{
+    color: hsl(14, 45%, 36%);
+    font-size: .8rem;
+}
+.instructions li{
+    padding: .3rem;
+}
+.instructions li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+tr:not(:last-child){
+    border-bottom: .1pt solid hsl(30, 10%, 34%, 0.5);
+}
+th{
+    padding: .625rem;
+    padding-left: 1.8rem;
+    font-weight: 400;
+}
+td{
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+hr{
+    border: 0;
+    height: .1pt;
+    background-color: hsla(32, 10%, 34%, 0.5);
+}
+footer{
+    margin-top: 1.25rem;
+    margin-bottom: 8rem;
+    color: black;
+}
+.attribution{ 
+    font-size: 0.7rem; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+p{
+    font-size: 1rem;
+}
