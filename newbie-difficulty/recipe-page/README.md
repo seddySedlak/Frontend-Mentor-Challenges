@@ -25,4 +25,3 @@ My task was to build out this recipe page and make it as close to the design as 
    - First, I studied the designs located in the `/design` folder.
    - I created the basic HTML structure of the page according to the design.
    - Using CSS, I styled the page, paying attention to the correct `font-size`, `padding`, and `margin`.
-   - I added interactive elements like cursor and focus states for all interactive elements.
