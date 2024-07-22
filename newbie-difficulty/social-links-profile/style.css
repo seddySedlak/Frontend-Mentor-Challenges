@@ -16,31 +16,31 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 1.8rem;
+    border-radius: 1rem;
 }
 img {
-    width: 100px;
+    width: 6.25rem;
     border-radius: 100%;
 }
 h1 {
     font-weight: 700;
     color: hsl(0, 0%, 100%);
-    font-size: 26px;
+    font-size: 1.625rem;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 1.8rem;
 }
 h2 {
     color: hsl(75, 94%, 57%);
     font-weight: 600;
-    font-size: 15px;
-    margin: 10px;
+    font-size: 1rem;
+    margin: .625rem;
 }
 p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: .875rem;
     color: hsl(0, 0%, 57%);
-    margin: 20px;
+    margin: 1.25rem;
 }
 ul {
     margin: 0;
@@ -51,14 +51,14 @@ li a {
     background-color: hsl(0, 0%, 20%);
     display: block;
     text-align: center;
-    padding: 13px 95px;
-    border-radius: 5px;
+    padding: 0.7rem 5.9rem;
+    border-radius: .3rem;
     color: hsl(0, 0%, 100%);
     font-weight: 400;
 }
 li {
     list-style: none;
-    margin: 12px 0;
+    margin: .75rem 0;
     padding: 0;
 }
 li a:hover {
@@ -67,7 +67,7 @@ li a:hover {
     color: black;
 }
 .attribution { 
-    font-size: 11px; 
+    font-size: .625rem; 
     text-align: center; 
     color: white;
 }
@@ -77,3 +77,17 @@ li a:hover {
 footer {
     margin: 1.25rem;
 }
+
+/* phones */
+@media (max-width: 480px) {
+    nav{
+        padding: 1.25rem;
+    }
+    li a{
+        padding: 0.7rem 4.5rem;  
+    }
+}
+/* Low resolution tablets */
+@media (min-width: 481px) and (max-width: 767px) {}
+/* Tablets in portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {}
