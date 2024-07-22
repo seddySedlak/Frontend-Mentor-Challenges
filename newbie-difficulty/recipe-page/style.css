@@ -12,7 +12,7 @@ body{
     color: hsl(30, 10%, 34%);
 }
 header, article{
-    width: 30vw;
+    width: 40vw;
     background-color: hsl(0, 0%, 100%);
     padding: 2.5rem;
 }
@@ -110,4 +110,44 @@ footer{
 }
 p{
     font-size: 1rem;
+}
+
+/* phones */
+@media (max-width: 480px) {
+    body{
+        header, article{
+            width: auto;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+    footer{    
+        margin-bottom: 1.25rem;
+    }
+}
+/* Low resolution tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    body{
+        header, article{
+            width: auto;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+    footer{    
+        margin-bottom: 1.25rem;
+    }
+}
+/* Tablets in portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        header, article{
+            width: auto;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+    footer{    
+        margin-bottom: 1.25rem;
+    }
 }
