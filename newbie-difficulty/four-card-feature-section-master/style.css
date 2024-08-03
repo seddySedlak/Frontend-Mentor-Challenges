@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --fw-light: 200;
+    --fw-medium: 400;
+    --fw-bold: 600;
+    --gap: 2.188rem;
+    --padd: 2.5rem;
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--light-gray);
+    gap: 3.125rem; 
+}
+header{
+    text-align: center;
+    width: 35vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-weight: var(--fw-light);
+    width: 30vw;
+    font-size: 2.25rem;
+}
+h1 span{
+    font-weight: var(--fw-bold);
+}
+header p{
+    color: var(--grayish-blue);
+    font-size: 1rem;
+    width: 30vw;
+}
+.wrapper-grid{
+    display: flex;
+    width: 80vw;
+    height: auto;
+    gap: var(--gap);
+}
+.col{
+    display: grid;
+    gap: var(--gap);
+    align-items: center;
+    width: 100%;
+}
+.card{
+    background-color: var(--light-gray);
+    padding: var(--padd);
+    border-top: .5rem solid;
+    border-radius: .5rem;
+    padding-top: 1.563rem;
+    padding-bottom: var(--padd);
+    box-shadow: 0 .938rem 1.875rem -.438rem rgba(0,0,0,0.1);
+}
+h2{
+    font-weight: var(--fw-bold);
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+.card p{
+    color: var(--grayish-blue);
+    font-size: .938rem;
+}
+.card svg{
+    width: 4.5rem;
+    height: 4.5rem;
+    display: block;
+    margin-left: auto;
+    margin-top: 2.5rem;
+}
+.first-card{
+    border-color: var(--color-cyan);
+}
+.second-card{
+    border-color: var(--color-red);
+}
+.third-card{
+    border-color: var(--color-orange);
+}
+.fourth-card{
+    border-color: var(--color-blue);
+}
+footer{
+    margin-bottom: 1.25rem;
+}
+.attribution{ 
+    font-size: .625rem; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+/* phones */
+@media (max-width: 480px) {
+    header{
+        width: 80vw;
+        margin-top: 3.125rem;
+    }
+    h1{
+        font-size: 1.35rem;
+        width: auto;
+    }
+    header p{
+        font-size: .875rem;
+        width: auto;
+    }
+    .wrapper-grid{
+        justify-content: center;
+        flex-direction: column;
+        width: 80vw;
+    }
+    h2{
+        font-size: 1.125rem;
+    }
+    .card{
+        padding: 1.75rem;
+    }
+    .card p{
+        font-size: .75rem;
+    }
+    .card svg{
+        width: 4rem;
+        height: 4rem;
+    }
+    main{
+        margin-bottom: 3.125rem;
+    }
+}
+/* Low resolution tablets */
+@media (min-width: 481px) and (max-width: 820px) {
+    header{
+        width: 70vw;
+        margin-top: 3.125rem;
+    }
+    h1{
+        font-size: 2.25rem;
+        width: 60vw;
+    }
+    header p{
+        font-size: 1.1rem;
+        width: auto;
+    }
+    .wrapper-grid{
+        justify-content: center;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    .card{
+        padding: 2rem;
+        width: 50%;
+    }
+    .col:nth-child(2) .card{
+        width: auto;
+    }
+    .card p{
+        font-size: .85rem;
+    }
+    .card svg{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    main{
+        margin-bottom: 3.125rem;
+    }
+}
+/* Tablets in portrait mode */
+@media (min-width: 821px) and (max-width: 1024px) {
+    header{
+        width: 70vw;
+        margin-top: 3.125rem;
+    }
+    h1  {
+        font-size: 2.5rem;
+        width: 60vw;
+    }
+    header p{
+        font-size: 1.35rem;
+        width: auto;
+    }
+    .wrapper-grid{
+        justify-content: center;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    .card{
+        padding: 2.5rem;
+        width: 50%;
+    }
+    .col:nth-child(2) .card{
+        width: auto;
+    }
+    .card p{
+        font-size: 1.15rem;
+    }
+    .card svg{
+        width: 4.35rem;
+        height: 4.35rem;
+    }
+    main{
+        margin-bottom: 3.125rem;
+    }
+}
